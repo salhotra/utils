@@ -51,3 +51,31 @@
     > **none** - No trailing commas.  
       **es5** - Trailing commas where valid in ES5 (objects, arrays, etc.)  
       **all** - Trailing commas wherever possible (including function arguments). This requires node 8 or a transform.
+
+
+## Linting
+
+1. ### Airbnb
+    - Packages to be installed:
+
+    ```
+      yarn add -D eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+    ```
+
+    - `eslintrc` file
+
+    ```json
+    {
+      "parser": "babel-eslint",
+      "extends": "airbnb",
+      "rules": {
+        "react/jsx-filename-extension": 0,
+        "import/prefer-default-export": 0,
+        "arrow-body-style": 0
+      },
+      "env": {
+        "browser": true,
+        "jest": true
+      }
+    }
+    ```
