@@ -1,4 +1,4 @@
-## Prettier
+# Prettier
 
 ```json
 {
@@ -7,7 +7,7 @@
   "jsxBracketSameLine": false,
   "parser": "babylon",
   "semi": true,
-  "singleQuote": false,
+  "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false
@@ -52,8 +52,9 @@
       **es5** - Trailing commas where valid in ES5 (objects, arrays, etc.)  
       **all** - Trailing commas wherever possible (including function arguments). This requires node 8 or a transform.
 
+<br>
 
-## Linting
+# Linting
 
 1. ### Airbnb
     - Packages to be installed:
@@ -79,3 +80,13 @@
       }
     }
     ```
+
+    <hr/>
+
+    #### ** Shortcut **
+
+    ```
+      npx install-eslint salhotra-eslint
+    ```
+
+    Then add `jest` flag in env inside eslintrc.
